@@ -1,2 +1,2 @@
 # sud-linux
-Install scripts for linux installation automation
+Scripts for linux install automation
