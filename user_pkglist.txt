@@ -1,8 +1,0 @@
-# Note: not for offline install.
-vim
-code
-signal-desktop
-element-desktop
-discord
-steam
-wine
