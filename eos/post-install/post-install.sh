@@ -1,2 +1,6 @@
+#!/bin/bash
+
+DIR=~/Source/Repos/sud-linux/eos/post-install
+
 # Install AUR programs
-bash ~/Source/Repos/sud-linux/eos/post-install/aur-programs/install.sh
+bash $DIR/aur-programs/install.sh
