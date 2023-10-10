@@ -63,15 +63,8 @@
 
 username="$1"
 
-# Copy the cloned repo (including any modifications the user made to it) to the
-#    default user's home folder, and chown those files to that user.
-mkdir -p /home/$username/Source/Repos/sud-linux/
-chown -Rf $username /home/$username/
-cp -rf ~/sud-linux/ /home/$username/Source/Repos/sud-linux/
-
-# Copy the final install user-configuration files to the repo to confirm to the user what was used by the installer.
-cp ~/user_pkglist.txt /home/$username/Source/Repos/sud-linux/eos/installed_pkglist.txt
-cp ~/user_commands.bash /home/$username/Source/Repos/sud-linux/eos/executed_commands.bash
+# Clone the repo to the default user's home folder, and chown those files to that user.
+git clone https://github.com/kyllian/sud-linux.git /home/$username/Source/Repos/sud-linux/
 
 # echo "# Hello world!" >> /home/$username/.bashrc
 # pacman -S --noconfirm --needed geany chromium libreoffice-fresh
