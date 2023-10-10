@@ -63,7 +63,7 @@
 
 username="$1"
 
-cp -r ~/sud-linux/ /home/$username/Source/Repos/sud-linux/
+mkdir -p /home/$username/Source/Repos/sud-linux/ && cp -r myfile "$_"
 
 cp ~/user_pkglist.txt /home/$username/Source/Repos/sud-linux/eos/installed_pkglist.txt
 cp ~/user_commands.bash /home/$username/Source/Repos/sud-linux/eos/executed_commands.bash
