@@ -34,5 +34,5 @@ The custom `sud_commands.bash` script also copies the whole cloned repo to your 
 For after freshly booting your new installation, I've included another script that is intended to automate the installation of user programs and other configuration that calamares is incapable of doing as root during the OS installation.
 
 ```
-bash ~/Source/Repos/sud-linux/eos/pre-install/pre-install.sh
+bash ~/Source/Repos/sud-linux/eos/post-install/post-install.sh
 ```

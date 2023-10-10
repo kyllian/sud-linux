@@ -63,10 +63,10 @@
 
 username="$1"
 
-git clone https://github.com/kyllian/sud-linux.git /home/$username/Source/Repos/sud-linux/
+cp -r ~/sud-linux/ /home/$username/Source/Repos/sud-linux/
 
-cat user_pkglist.txt > /home/$username/Source/Repos/sud-linux/installed_pkglist.txt
-cat user_commands.bash > /home/$username/Source/Repos/sud-linux/executed_commands.bash
+cp ~/user_pkglist.txt /home/$username/Source/Repos/sud-linux/eos/installed_pkglist.txt
+cp ~/user_commands.bash /home/$username/Source/Repos/sud-linux/eos/executed_commands.bash
 
 # echo "# Hello world!" >> /home/$username/.bashrc
 # pacman -S --noconfirm --needed geany chromium libreoffice-fresh
