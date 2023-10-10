@@ -63,8 +63,13 @@
 
 username="$1"
 
-mkdir -p /home/$username/Source/Repos/sud-linux/ && cp -r ~/sud-linux/ "$_"
+# Copy the cloned repo (including any modifications the user made to it) to the
+#    default user's home folder, and change the owner of those files to that user.
+mkdir -p /home/$username/Source/Repos/sud-linux/
+chown -Rf $username /home/$username/Source/
+cp -r ~/sud-linux/ /home/$username/Source/Repos/sud-linux/
 
+# Copy the final install user-configuration files to the repo to confirm to the user what was used by the installer.
 cp ~/user_pkglist.txt /home/$username/Source/Repos/sud-linux/eos/installed_pkglist.txt
 cp ~/user_commands.bash /home/$username/Source/Repos/sud-linux/eos/executed_commands.bash
 
