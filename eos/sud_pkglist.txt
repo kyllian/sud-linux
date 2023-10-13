@@ -3,6 +3,7 @@
 vulkan-radeon
 lib32-vulkan-radeon
 vim
+github-cli
 code
 signal-desktop
 element-desktop
