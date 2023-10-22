@@ -5,6 +5,7 @@ lib32-vulkan-radeon
 vim
 github-cli
 easyeffects
+qmk
 code
 signal-desktop
 element-desktop
