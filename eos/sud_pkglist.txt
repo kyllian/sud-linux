@@ -4,9 +4,11 @@ vulkan-radeon
 lib32-vulkan-radeon
 vim
 github-cli
+easyeffects
 code
 signal-desktop
 element-desktop
 discord
 steam
 wine
+wireguard-tools
