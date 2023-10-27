@@ -12,4 +12,5 @@ element-desktop
 discord
 steam
 wine
+wine-mono
 wireguard-tools
